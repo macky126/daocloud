@@ -27,10 +27,8 @@ ENV METHOD      aes-128-cfb
 ENV TIMEOUT     300
 ENV DNS_ADDR    114.114.115.115
 
-#EXPOSE $SERVER_PORT
-ports:
- - "3000"
- - "445:9000"
+EXPOSE $SERVER_PORT
+PORTS 445:9009
 
 #CMD ss-server -s $SERVER_ADDR \
 #              -p $SERVER_PORT \
