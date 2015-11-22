@@ -30,13 +30,13 @@ ENV DNS_ADDR    114.114.115.115
 #EXPOSE $SERVER_PORT
 ports:
  - "3000"
- - ":9000"
+ - "445:9000"
 
-CMD ss-server -s $SERVER_ADDR \
-              -p $SERVER_PORT \
-              -k $PASSWORD \
-              -m $METHOD \
-              -t $TIMEOUT \
-              --fast-open \
-              -d $DNS_ADDR \
-              -u
+#CMD ss-server -s $SERVER_ADDR \
+#              -p $SERVER_PORT \
+#              -k $PASSWORD \
+#              -m $METHOD \
+#              -t $TIMEOUT \
+#              --fast-open \
+#              -d $DNS_ADDR \
+#              -u
